@@ -9,13 +9,14 @@ const PROJECT_DATA = [
     tech: "ReactJS, Vite, Tailwind CSS",
     imgUrl: "/assets/portfolio_thumbnail.png",
     liveUrl: "https://itsmeboyd.github.io",
-    codeUrl: "#",
+    codeUrl: "https://github.com/itsmeboyd/itsmeboyd.github.io.git",
   },
   {
-    title: "Hotel Management System",
+    title: "Project X (Coming Soon)",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ipsam reprehenderit explicabo repellendus fuga necessitatibus, eaque quae ipsum nam ad doloremque iste?",
-    tech: "HTML, CSS, JS",
+      "An upcoming web application focused on high performance and clean UI, built with ReactJS, Vite, and Tailwind CSS.",
+    tech: "ReactJS, Vite, Tailwind CSS",
+    imgUrl: "/assets/cs_thumb.png",
     liveUrl: "#",
     codeUrl: "#",
   },
