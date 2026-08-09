@@ -11,7 +11,7 @@ export default function Footer() {
             <Logo />
           </div>
 
-          <div className="flex flex-col flex-row gap-6 text-sm text-gray-400">
+          <div className="flex flex-row gap-6 text-sm text-gray-400">
             <a
               href="tel:+639121451306"
               className="flex items-center gap-2 hover:text-white transition-colors"
