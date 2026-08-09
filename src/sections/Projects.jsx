@@ -24,7 +24,7 @@ const PROJECT_DATA = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 bg-[#0c0d0d] text-white">
+    <section id="projects" className="py-10 md:py-20 bg-[#0c0d0d] text-white">
       <div className="container mx-auto px-4">
         <div className="mb-16">
           <h2 className="text-4xl font-bold mb-2">
@@ -33,18 +33,18 @@ export default function Projects() {
           <p className="text-gray-400 text-lg">Things I’ve built so far</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 gap-8">
           {PROJECT_DATA.map((project, index) => (
             <div
               key={index}
               className="bg-[#111111] border border-neutral-800 rounded-lg p-6 flex flex-col space-y-4 hover:border-green-800/50 transition-colors"
             >
               {/* Image Placeholder */}
-              <div className="w-full h-48 bg-[#2d2d2d] rounded-md flex items-center justify-center overflow-hidden">
+              <div className="w-full min-h-48 aspect-3/2 bg-[#2d2d2d] rounded-md flex items-center justify-center overflow-hidden">
                 <img
                   src={project.imgUrl}
                   alt="Thumbnail"
-                  className="rounded-md block object-top object-cover"
+                  className="rounded-md min-h-48 aspect-3/2 block object-top object-cover"
                 />
               </div>
 

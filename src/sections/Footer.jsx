@@ -1,5 +1,5 @@
 import Logo from "../components/Logo";
-import Navigation from "../components/Navigation";
+import FooterNavigation from "../components/FooterNavigation";
 import SocialMedia from "../components/SocialMedia";
 
 export default function Footer() {
@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 text-sm items-center text-gray-500">
           <SocialMedia />
           <div className="col-span-2 justify-center">
-            <Navigation />
+            <FooterNavigation />
           </div>
           <div className="text-center md:text-right text-xs">
             Built by{" "}

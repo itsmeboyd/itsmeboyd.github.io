@@ -1,17 +1,7 @@
 import { useState, useEffect } from "react";
+import { menuItems } from "../data/MenuItems";
 
-function Navigation() {
-  const menuItems = [
-    {
-      label: "Home",
-      href: "#home",
-    },
-    { label: "Tech Stack", href: "#techStack" },
-    { label: "Projects", href: "#projects" },
-    { label: "Experience", href: "#experience" },
-    { label: "Contact", href: "#contact" },
-  ];
-
+function FooterNavigation() {
   const [currentHash, setCurrentHash] = useState(
     window.location.hash || "#home",
   );
@@ -43,7 +33,9 @@ function Navigation() {
               onClick={() => setCurrentHash(menu.href)}
               key={index}
             >
-              <a href={menu.href}>{menu.label}</a>
+              <a href={menu.href} className="whitespace-nowrap">
+                {menu.label}
+              </a>
             </li>
           );
         })}
@@ -52,4 +44,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default FooterNavigation;

@@ -3,7 +3,7 @@ function Hero() {
     <>
       <section
         id="home"
-        className="relative min-h-125 w-full overflow-hidden bg-[#0c0d0d] text-white flex items-center px-8 md:px-16"
+        className="relative min-h-80 md:min-h-125 w-full overflow-hidden bg-[#0c0d0d] text-white flex items-center md:px-16"
       >
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(34,197,94,0.15),transparent_60%)]" />
 
