@@ -1,16 +1,55 @@
-# React + Vite
+# Boyd Delfin — Web Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Site](https://img.shields.io/badge/Live_Site-itsmeboyd.github.io-38d353?style=for-the-badge&logo=github&logoColor=white)](https://itsmeboyd.github.io/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub_Repo-itsmeboyd.github.io-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/itsmeboyd/itsmeboyd.github.io.git)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-Currently, two official plugins are available:
+A modern, high-performance one-page developer portfolio website built with **ReactJS**, **Vite**, and **Tailwind CSS**. Designed with a dark-mode matrix aesthetic, custom radial gradients, and responsive navigation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Single Page Navigation:** Hash-based navigation synced with custom React `useEffect` state.
+- **Dark Aesthetic UI:** Styled using custom dark palettes (`#0c0d0d`), vibrant green accents (`#38d353`), and radial dot-grid backgrounds.
+- **Tech Stack Showcase:** Comprehensive grid displaying technologies with clean icon sets using `@lineiconshq/react-lineicons`.
+- **Project Showcase:** Detailed project cards with live preview links, code repositories, and upcoming project placeholders.
+- **Career Timeline:** Dotted-line timeline highlighting web development experience and milestones.
+- **Fully Responsive:** Optimized across mobile, tablet, and desktop viewports.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack & Libraries
+
+- **Framework:** [ReactJS](https://react.dev/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Icons:** [`@lineiconshq/react-lineicons`](https://lineicons.com/) & [`@lineiconshq/free-icons`](https://lineicons.com/)
+- **Deployment:** [GitHub Pages](https://pages.github.com/) via `gh-pages`
+
+---
+
+## 📁 Project Structure
+
+```text
+itsmeboyd.github.io/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── TechStack.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Experience.jsx
+│   │   └── Footer.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
