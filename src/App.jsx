@@ -1,6 +1,6 @@
 // import React from "react";
 
-import Header from "./components/Header";
+import Header from "./sections/Header";
 import Hero from "./sections/Hero";
 import TechStack from "./sections/TechStack";
 import Projects from "./sections/Projects";

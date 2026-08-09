@@ -40,10 +40,10 @@ export default function TechStack() {
     <section id="techStack" className="py-10 md:py-20 bg-[#0c0d0d] text-white">
       <div className="container mx-auto px-4">
         <div className="mb-16">
-          <h2 className="text-4xl font-bold mb-2">
+          <h2 className="text-xl md:text-4xl font-bold mb-2">
             Tech Stack<span className="text-[#38d353]">:</span>
           </h2>
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-400 text-sm md:text-lg">
             Technologies I've been working with recently
           </p>
         </div>

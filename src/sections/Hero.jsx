@@ -23,7 +23,7 @@ function Hero() {
             <div className="pt-2">
               <a
                 href="#projects"
-                className="inline-block rounded-full bg-(--accent) px-6 py-3 font-semibold text-(--accent-fg) hover:scale-105 hover:bg-[#0c581a] hover:text-white"
+                className="inline-block rounded-full bg-(--accent) px-6 py-3 text-(--accent-fg) hover:scale-105 hover:bg-[#0c581a] hover:text-white"
               >
                 View Projects
               </a>

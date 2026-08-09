@@ -20,7 +20,7 @@ function FooterNavigation() {
 
   return (
     <nav className="w-auto flex justify-center">
-      <ul className="flex flex-row gap-8">
+      <ul className="flex flex-row gap-4 md:gap-8 flex-wrap">
         {menuItems.map((menu, index) => {
           const isActive = currentHash === menu.href;
           return (

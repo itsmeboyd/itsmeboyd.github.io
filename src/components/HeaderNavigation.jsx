@@ -19,7 +19,7 @@ function HeaderNavigation() {
   }, []);
 
   return (
-    <nav className="w-auto flex justify-center">
+    <nav className="w-auto justify-center hidden md:flex">
       <ul className="flex flex-row gap-8">
         {menuItems.map((menu, index) => {
           const isActive = currentHash === menu.href;

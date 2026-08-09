@@ -25,10 +25,10 @@ export default function Experience() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          <h2 className="text-xl md:text-4xl font-bold tracking-tight">
             Experience<span className="text-[#38d353]">:</span>
           </h2>
-          <p className="text-gray-400 text-sm mt-2 font-normal">
+          <p className="text-gray-400 text-sm md:text-lg mt-2 font-normal">
             Career History & Impact
           </p>
         </div>
