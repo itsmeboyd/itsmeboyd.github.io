@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --default-bg: #0a0a0a;
+  --default-bg-rgba: rgba(10, 10, 10, 0.3);
+  --inverted-bg: #dcdcdc;
+  --accent: #4db33d;
+  --accent-fg: #0a0a0a;
+}
+
+body {
+  background-color: var(--default-bg);
+  font-family: "Inter", sans-serif;
+}
+
+/* Header */
+header {
+  background-color: var(--default-bg-rgba);
+}
+
+/* B:_ Logo */
+.b_logo {
+  font-size: 28px;
+  color: #fff;
+  user-select: none;
+  cursor: pointer;
+}
+.b_logo > .initial {
+  font-weight: 700;
+}
+.b_logo > span:not(.initial) {
+  color: var(--accent);
+}
+.b_logo > span {
+  line-height: 1;
+}
+.b_logo > .cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
