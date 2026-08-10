@@ -23,24 +23,22 @@ function ProjectCard({ project }, index) {
         />
       </div>
       <div className="grow space-y-3">
-        <div className="">
-          {project.liveUrl !== "#" ? (
-            <h3 className="text-xl font-semibold flex items-center justify-between w-full">
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neutral-100 hover:text-(--accent) transition-colors"
-              >
-                {project.title}
-              </a>
-            </h3>
-          ) : (
-            <h3 className="text-xl font-semibold flex flex-row items-center justify-between w-full">
+        {project.liveUrl !== "#" ? (
+          <h3 className="text-xl font-semibold flex items-center justify-between w-full">
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-neutral-100 hover:text-(--accent) transition-colors"
+            >
               {project.title}
-            </h3>
-          )}
-        </div>
+            </a>
+          </h3>
+        ) : (
+          <h3 className="text-xl font-semibold flex flex-row items-center justify-between w-full">
+            {project.title}
+          </h3>
+        )}
         <p className="text-gray-400 text-sm leading-relaxed line-clamp-3">
           {project.description}
         </p>
