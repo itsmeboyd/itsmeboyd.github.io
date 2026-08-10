@@ -14,14 +14,14 @@ body {
 }
 
 /* Cursor */
-*:not(a *) {
+* {
   cursor:
     url("./assets/cursor_default.svg") 16 16,
     default;
 }
 a {
   cursor:
-    url("./assets/cursor_pointer.svg") 13 13,
+    url("./assets/cursor_pointer.svg") 16 16,
     pointer !important;
 }
 

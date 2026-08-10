@@ -9,7 +9,7 @@ export const ProjectsData = [
     codeUrl: "https://github.com/itsmeboyd/itsmeboyd.github.io.git",
   },
   {
-    title: "Project X (Coming Soon)",
+    title: "Project X",
     description:
       "An upcoming web application focused on high performance and clean UI, built with ReactJS, Vite, and Tailwind CSS.",
     tech: ["Vite", "React", "TailwindCSS"],

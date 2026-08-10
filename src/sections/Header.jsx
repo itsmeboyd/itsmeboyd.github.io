@@ -4,7 +4,7 @@ import SocialMedia from "../components/SocialMedia";
 
 function Header() {
   return (
-    <header className="sticky top-0 w-full py-2 md:py-5 z-9">
+    <header className="sticky top-0 w-full py-2 md:py-5 z-99">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-3 md:grid-cols-3 gap-2">
           <div className="logo">
