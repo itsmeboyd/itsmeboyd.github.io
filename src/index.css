@@ -49,3 +49,8 @@ header {
     opacity: 1;
   }
 }
+
+/* Main Section */
+main > section {
+  scroll-margin-top: 82px;
+}

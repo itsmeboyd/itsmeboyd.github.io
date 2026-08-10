@@ -27,15 +27,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-8 text-sm items-center text-gray-500">
+        <div className="grid md:grid-cols-2 gap-8 text-sm items-center text-gray-500">
           <SocialMedia />
-          <div className="col-span-2 justify-center">
-            <FooterNavigation />
-          </div>
-          <div className="text-center md:text-right text-xs">
-            Built by{" "}
-            <span className="text-[#38d353] font-semibold">BOYD DELFIN</span>
-          </div>
+          <FooterNavigation />
         </div>
 
         <div className="text-center text-xs text-neutral-700 mt-12 pt-6 border-t border-neutral-900">

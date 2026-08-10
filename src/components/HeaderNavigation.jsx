@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { menuItems } from "../data/MenuItems";
+import { NavigationItems } from "../data/NavigationData";
+import { handleHashChange } from "../lib/utils";
 
 function HeaderNavigation() {
   const [currentHash, setCurrentHash] = useState(
@@ -7,10 +8,6 @@ function HeaderNavigation() {
   );
 
   useEffect(() => {
-    const handleHashChange = () => {
-      setCurrentHash(window.location.hash || "#home");
-    };
-
     window.addEventListener("hashchange", handleHashChange);
 
     return () => {
@@ -19,9 +16,9 @@ function HeaderNavigation() {
   }, []);
 
   return (
-    <nav className="w-auto justify-center hidden md:flex">
+    <nav className="w-auto hidden md:flex">
       <ul className="flex flex-row gap-8">
-        {menuItems.map((menu, index) => {
+        {NavigationItems.map((menu, index) => {
           const isActive = currentHash === menu.href;
           return (
             <li

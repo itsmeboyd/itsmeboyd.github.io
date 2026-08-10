@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { menuItems } from "../data/MenuItems";
+import { NavigationItems } from "../data/NavigationData";
+import { handleHashChange } from "../lib/utils";
 
 function FooterNavigation() {
   const [currentHash, setCurrentHash] = useState(
@@ -7,10 +8,6 @@ function FooterNavigation() {
   );
 
   useEffect(() => {
-    const handleHashChange = () => {
-      setCurrentHash(window.location.hash || "#home");
-    };
-
     window.addEventListener("hashchange", handleHashChange);
 
     return () => {
@@ -19,9 +16,9 @@ function FooterNavigation() {
   }, []);
 
   return (
-    <nav className="w-auto flex justify-center">
+    <nav className="w-auto flex justify-end">
       <ul className="flex flex-row gap-4 md:gap-8 flex-wrap">
-        {menuItems.map((menu, index) => {
+        {NavigationItems.map((menu, index) => {
           const isActive = currentHash === menu.href;
           return (
             <li
