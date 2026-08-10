@@ -1,23 +1,4 @@
-const EXPERIENCE_DATA = [
-  {
-    role: "WordPress Technical Specialist",
-    company: "Your Easy Web Solutions, Woollongabba, AU",
-    date: "November 2022 - June 2026",
-    duration: "3 years and 7 months",
-  },
-  {
-    role: "WordPress Web Developer",
-    company: "Codezpace, Cabuyao, Laguna, PH",
-    date: "August 2020 - July 2022",
-    duration: "1 year and 11 months",
-  },
-  {
-    role: "Web Developer",
-    company: "Night Birds Solutions, Bacolod City, PH",
-    date: "December 2018 - June 2020",
-    duration: "1 year and 6 months",
-  },
-];
+import { ExperienceData } from "../data/ExperienceData";
 
 export default function Experience() {
   return (
@@ -40,7 +21,7 @@ export default function Experience() {
 
           {/* Cards List */}
           <div className="space-y-6">
-            {EXPERIENCE_DATA.map((job, index) => (
+            {ExperienceData.map((job, index) => (
               <div key={index} className="relative flex items-center gap-6">
                 {/* Green Dot Node */}
                 <div className="relative z-10 shrink-0 w-4 h-4 rounded-full bg-[#38d353]" />
