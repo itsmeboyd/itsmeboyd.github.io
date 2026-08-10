@@ -28,6 +28,9 @@ header {
 .b_logo > .initial {
   font-weight: 700;
 }
+.b_logo > .colon {
+  font-weight: 400;
+}
 .b_logo > span:not(.initial) {
   color: var(--accent);
 }
@@ -35,6 +38,7 @@ header {
   line-height: 1;
 }
 .b_logo > .cursor {
+  font-weight: 400;
   animation: blink 1s infinite;
 }
 

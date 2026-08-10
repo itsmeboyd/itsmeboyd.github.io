@@ -3,7 +3,7 @@ export const ProjectsData = [
     title: "Portfolio Website",
     description:
       "A responsive single-page portfolio designed and built with ReactJS and Vite, featuring custom state management, smooth scrolling navigation, and sleek Tailwind CSS styling.",
-    tech: ["Vite", "React", "TailwindCSS", "Lineicons", "Github"],
+    tech: ["Vite", "React", "TailwindCSS", "Lineicons"],
     imgUrl: "/assets/portfolio_thumbnail.png",
     liveUrl: "https://itsmeboyd.github.io",
     codeUrl: "https://github.com/itsmeboyd/itsmeboyd.github.io.git",
