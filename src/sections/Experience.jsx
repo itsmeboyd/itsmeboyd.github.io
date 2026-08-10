@@ -2,6 +2,7 @@ import Lineicons from "@lineiconshq/react-lineicons";
 import {
   Buildings1Outlined,
   MapMarker1Outlined,
+  Briefcase2Outlined,
 } from "@lineiconshq/free-icons";
 import { ExperienceData } from "../data/ExperienceData";
 
@@ -40,6 +41,12 @@ export default function Experience() {
                         <Lineicons icon={MapMarker1Outlined} size={16} />
                       </span>
                       <span className="font-medium">{job.location}</span>
+                    </p>
+                    <p className="text-gray-400 text-sm mt-1 flex items-center gap-2">
+                      <span>
+                        <Lineicons icon={Briefcase2Outlined} size={16} />
+                      </span>
+                      <span className="font-medium">{job.workplace}</span>
                     </p>
                   </div>
                   <div className="md:text-right">
