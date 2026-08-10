@@ -1,11 +1,16 @@
+import Lineicons from "@lineiconshq/react-lineicons";
+import {
+  Buildings1Outlined,
+  MapMarker1Outlined,
+} from "@lineiconshq/free-icons";
 import { ExperienceData } from "../data/ExperienceData";
 
 export default function Experience() {
   return (
-    <section id="experience" className="bg-[#0c0d0d] text-white py-20 px-6">
+    <section id="experience" className="py-10 md:py-20 bg-[#0c0d0d] text-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="mb-14">
+        <div className="mb-10 md:mb-16">
           <h2 className="text-xl md:text-4xl font-bold tracking-tight">
             Experience<span className="text-[#38d353]">:</span>
           </h2>
@@ -22,18 +27,29 @@ export default function Experience() {
           {/* Cards List */}
           <div className="space-y-6">
             {ExperienceData.map((job, index) => (
-              <div key={index} className="relative flex items-center gap-6">
+              <div key={index} className="relative flex items-center gap-6 ">
                 {/* Green Dot Node */}
                 <div className="relative z-10 shrink-0 w-4 h-4 rounded-full bg-[#38d353]" />
 
                 {/* Experience Card */}
-                <div className="grow bg-[#1c1c1c] rounded-xl p-6 md:px-8 md:py-6 flex flex-col md:flex-row md:items-center justify-between gap-4 border border-neutral-800/40">
+                <div className="grow md:px-8 md:py-6 md:flex-row md:items-center justify-between gap-4 bg-[#111111] border border-neutral-800 rounded-lg p-6 flex flex-col space-y-4 hover:border-green-800/50 transition-colors">
                   {/* Left Column: Role & Company */}
-                  <div>
+                  <div className="m-0">
                     <h3 className="text-lg md:text-xl font-bold text-white tracking-wide">
                       {job.role}
                     </h3>
-                    <p className="text-gray-400 text-sm mt-1">{job.company}</p>
+                    <p className="text-gray-400 text-sm mt-1 flex items-center gap-2">
+                      <span>
+                        <Lineicons icon={Buildings1Outlined} size={16} />
+                      </span>
+                      <span className="font-medium">{job.company}</span>
+                    </p>
+                    <p className="text-gray-400 text-sm mt-1 flex items-center gap-2">
+                      <span>
+                        <Lineicons icon={MapMarker1Outlined} size={16} />
+                      </span>
+                      <span className="font-medium">{job.location}</span>
+                    </p>
                   </div>
 
                   {/* Right Column: Date & Duration */}
