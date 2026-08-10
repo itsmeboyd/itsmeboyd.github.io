@@ -7,15 +7,10 @@ function ProjectCard({ project }, index) {
       project.liveUrl !== "#"
         ? "bg-(--accent) text-(--accent-fg)"
         : "bg-neutral-800 text-neutral-300";
+    const finalBadgeClass = `${badgeClass} absolute top-2 right-2 z-9 rounded-lg pt-3 pb-2.5 px-2 font-bold flex items-center justify-center text-[8px] leading-0`;
     const statusText = project.liveUrl !== "#" ? "PUBLISHED" : "ONGOING";
 
-    return (
-      <span
-        className={`absolute top-2 right-2 z-9 rounded-lg pt-3 pb-2.5 px-2 font-bold flex items-center justify-center text-[8px] leading-0 ${badgeClass}`}
-      >
-        {statusText}
-      </span>
-    );
+    return <span className={finalBadgeClass}>{statusText}</span>;
   };
 
   //! Render the project title with a link to the live demo if available, otherwise just display the title
@@ -24,17 +19,18 @@ function ProjectCard({ project }, index) {
       project.liveUrl !== "#"
         ? "text-neutral-100 hover:text-(--accent) transition-colors"
         : "text-neutral-100";
+    const finalTitleClass = `${titleClass} text-xl font-semibold flex items-center justify-between w-full`;
     const titleText = project.title;
 
+    const hasLiveUrl = project.liveUrl !== "#" ? "" : "pointer-events-none";
+
     return (
-      <h3
-        className={`text-xl font-semibold flex items-center justify-between w-full ${titleClass}`}
-      >
+      <h3 className={finalTitleClass}>
         <a
           href={project.liveUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className={project.liveUrl !== "#" || "pointer-events-none"}
+          className={hasLiveUrl}
         >
           {titleText}
         </a>
