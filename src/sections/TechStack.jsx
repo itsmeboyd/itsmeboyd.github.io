@@ -15,13 +15,13 @@ export default function TechStack() {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-4 md:gap-y-12 items-center justify-items-center">
+        <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-x-4 gap-y-4 md:gap-y-12 items-center justify-items-center">
           {TechStackData.filter((tech) => tech.isMajorTech).map((tech) => {
             const IconComponent = Icons[tech.icon];
             return (
               <div
                 key={tech.name}
-                className="flex flex-col items-center group text-center p-5 rounded-lg bg-[#111111] border border-neutral-800 space-y-4 hover:border-green-800/50 transition-colors"
+                className="flex flex-col w-full md:w-auto items-center group text-center p-5 rounded-lg bg-[#111111] border border-neutral-800 space-y-4 hover:border-green-800/50 transition-colors"
               >
                 <div className="transition-transform group-hover:scale-110">
                   <Lineicons
