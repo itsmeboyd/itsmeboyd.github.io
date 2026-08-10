@@ -55,4 +55,10 @@ export const TechStackData = [
     color: "#725cff",
     isMajorTech: false,
   },
+  {
+    name: "Figma",
+    icon: "FigmaOutlined",
+    color: "#ffffff",
+    isMajorTech: false,
+  },
 ];

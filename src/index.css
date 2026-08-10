@@ -13,6 +13,38 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+/* Cursor */
+*:not(a *) {
+  cursor:
+    url("./assets/cursor_default.svg") 16 16,
+    default;
+}
+a {
+  cursor:
+    url("./assets/cursor_pointer.svg") 13 13,
+    pointer !important;
+}
+
+/* Highlight */
+::selection {
+  background-color: var(--accent);
+  color: var(--accent-fg);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--default-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 20px;
+}
+
 /* Header */
 header {
   background-color: var(--default-bg-rgba);
@@ -23,7 +55,10 @@ header {
   font-size: 28px;
   color: #fff;
   user-select: none;
-  cursor: pointer;
+}
+.b_logo *,
+.b_logo {
+  cursor: inherit !important;
 }
 .b_logo > .initial {
   font-weight: 700;
