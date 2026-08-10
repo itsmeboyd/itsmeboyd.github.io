@@ -10,7 +10,7 @@ export default function Projects() {
             Projects<span className="text-[#38d353]">:</span>
           </h2>
           <p className="text-gray-400 text-sm md:text-lg">
-            Things I’ve built so far
+            Things I've built so far
           </p>
         </div>
 
