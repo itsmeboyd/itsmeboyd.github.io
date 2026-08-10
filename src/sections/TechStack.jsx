@@ -1,4 +1,5 @@
 import { Lineicons } from "@lineiconshq/react-lineicons";
+import * as Icons from "@lineiconshq/free-icons";
 import { TechStackData } from "../data/TechStackData";
 
 export default function TechStack() {
@@ -15,19 +16,26 @@ export default function TechStack() {
         </div>
 
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-12 items-center justify-items-center">
-          {TechStackData.map((tech) => (
-            <div
-              key={tech.name}
-              className="flex flex-col items-center group text-center"
-            >
-              <div className="transition-transform group-hover:scale-110">
-                <Lineicons icon={tech.icon} size={48} color={tech.color} />
+          {TechStackData.map((tech) => {
+            const IconComponent = Icons[tech.icon];
+            return (
+              <div
+                key={tech.name}
+                className="flex flex-col items-center group text-center"
+              >
+                <div className="transition-transform group-hover:scale-110">
+                  <Lineicons
+                    icon={IconComponent}
+                    size={48}
+                    color={tech.color}
+                  />
+                </div>
+                <span className="mt-3 text-sm text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                  {tech.name}
+                </span>
               </div>
-              <span className="mt-3 text-sm text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">
-                {tech.name}
-              </span>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

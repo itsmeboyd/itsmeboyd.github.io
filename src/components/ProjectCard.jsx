@@ -1,5 +1,7 @@
 import { Lineicons } from "@lineiconshq/react-lineicons";
-import { Code1Outlined, EyeOutlined } from "@lineiconshq/free-icons";
+import { Link2AngularRightOutlined } from "@lineiconshq/free-icons";
+import { TechBadge } from "./TechBadge";
+
 function ProjectCard({ project }, index) {
   return (
     <div
@@ -14,32 +16,34 @@ function ProjectCard({ project }, index) {
         />
       </div>
       <div className="grow space-y-3">
-        <h3 className="text-xl font-semibold text-neutral-100">
-          {project.title}
-        </h3>
+        <div className="flex justify-between">
+          <h3 className="text-xl font-semibold text-neutral-100">
+            {project.title}
+          </h3>
+          {project.liveUrl !== "#" && (
+            <a
+              href={project.liveUrl}
+              className="flex items-center gap-2 hover:text-[#38d353] transition-colors"
+            >
+              <Lineicons
+                icon={Link2AngularRightOutlined}
+                size={18}
+                color="#38d353"
+              />
+            </a>
+          )}
+        </div>
         <p className="text-gray-400 text-sm leading-relaxed line-clamp-3">
           {project.description}
         </p>
-        <p className="text-xs text-neutral-300">
-          <span className="font-semibold text-gray-100">Tech Stack:</span>{" "}
-          {project.tech}
-        </p>
-      </div>
-      <div className="flex justify-between items-center text-sm pt-3 border-t border-neutral-800">
-        <a
-          href={project.liveUrl}
-          className="flex items-center gap-2 hover:text-[#38d353] transition-colors"
-        >
-          <Lineicons icon={EyeOutlined} size={18} color="#38d353" />
-          <span>Live Preview</span>
-        </a>
-        <a
-          href={project.codeUrl}
-          className="flex items-center gap-2 hover:text-[#38d353] transition-colors"
-        >
-          <Lineicons icon={Code1Outlined} size={18} color="currentColor" />
-          <span>View Code</span>
-        </a>
+        <div className="text-xs text-neutral-300 flex justify-between items-center flex-wrap mt-7">
+          <span className="font-semibold text-gray-100">Tech Stack:</span>
+          <div className="flex align-center gap-2">
+            {project.tech.map((tech, index) => (
+              <TechBadge key={index} name={tech} size={16} />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
