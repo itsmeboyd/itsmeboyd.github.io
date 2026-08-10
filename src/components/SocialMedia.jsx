@@ -24,7 +24,6 @@ function SocialMedia() {
     },
   ];
 
-  console.log(socialMedia);
   return (
     <div className="social_media flex  gap-2">
       {socialMedia.map((link, index) => (
