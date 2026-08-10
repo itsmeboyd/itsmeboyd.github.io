@@ -25,7 +25,7 @@ function SocialMedia() {
   ];
 
   return (
-    <div className="social_media flex  gap-2">
+    <div className="social_media flex gap-2 justify-center md:justify-start">
       {socialMedia.map((link, index) => (
         <a
           href={link.href}

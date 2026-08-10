@@ -16,8 +16,8 @@ function FooterNavigation() {
   }, []);
 
   return (
-    <nav className="w-auto flex justify-end">
-      <ul className="flex flex-row gap-4 md:gap-8 flex-wrap">
+    <nav className="w-auto flex justify-center md:justify-end">
+      <ul className="flex flex-row gap-2 md:gap-8 flex-auto flex-wrap justify-center md:justify-end">
         {NavigationItems.map((menu, index) => {
           const isActive = currentHash === menu.href;
           return (
@@ -30,7 +30,10 @@ function FooterNavigation() {
               onClick={() => setCurrentHash(menu.href)}
               key={index}
             >
-              <a href={menu.href} className="whitespace-nowrap">
+              <a
+                href={menu.href}
+                className="whitespace-nowrap text-xs md:text-normal"
+              >
                 {menu.label}
               </a>
             </li>
