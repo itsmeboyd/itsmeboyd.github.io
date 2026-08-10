@@ -15,7 +15,7 @@ export default function TechStack() {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-12 items-center justify-items-center">
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-4 md:gap-y-12 items-center justify-items-center">
           {TechStackData.filter((tech) => tech.isMajorTech).map((tech) => {
             const IconComponent = Icons[tech.icon];
             return (

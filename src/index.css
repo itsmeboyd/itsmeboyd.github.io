@@ -92,4 +92,7 @@ header {
 /* Main Section */
 main > section {
   scroll-margin-top: 82px;
+  @media (max-width: 767px) {
+    scroll-margin-top: 58px;
+  }
 }
