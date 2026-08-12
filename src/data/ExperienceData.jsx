@@ -1,13 +1,5 @@
 export const ExperienceData = [
   {
-    role: "Freelance Web Developer",
-    company: "Self-Employed",
-    location: "Bacolod City, PH",
-    date: "June 2026 - Present",
-    duration: "2 months",
-    workplace: "On-site",
-  },
-  {
     role: "WordPress Technical Specialist",
     company: "Your Easy Web Solutions",
     location: "Woollongabba, AU",
