@@ -1,24 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState, useContext } from "react";
 import { clsx } from "clsx";
 
 import { NavigationItems } from "../data/NavigationData";
-import { handleHashChange } from "../lib/utils";
 import SocialMedia from "./SocialMedia";
+import { NavContext } from "../contexts/NavContext";
 
 function HeaderNavigation() {
-  const [currentHash, setCurrentHash] = useState(
-    window.location.hash || "#home",
-  );
-
+  const { currentHash, setCurrentHash } = useContext(NavContext);
   const [isActive, setIsActive] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("hashchange", handleHashChange);
-
-    return () => {
-      window.removeEventListener("hashchange", handleHashChange);
-    };
-  }, []);
 
   return (
     <div

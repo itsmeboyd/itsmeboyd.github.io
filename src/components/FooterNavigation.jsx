@@ -1,20 +1,9 @@
-import { useState, useEffect } from "react";
+import { useContext } from "react";
 import { NavigationItems } from "../data/NavigationData";
-import { handleHashChange } from "../lib/utils";
+import { NavContext } from "../contexts/NavContext";
 
 function FooterNavigation() {
-  const [currentHash, setCurrentHash] = useState(
-    window.location.hash || "#home",
-  );
-
-  useEffect(() => {
-    window.addEventListener("hashchange", handleHashChange);
-
-    return () => {
-      window.removeEventListener("hashchange", handleHashChange);
-    };
-  }, []);
-
+  const { currentHash, setCurrentHash } = useContext(NavContext);
   return (
     <nav className="w-auto flex justify-center md:justify-end">
       <ul className="flex flex-row gap-2 md:gap-8 flex-auto flex-wrap justify-center md:justify-end">

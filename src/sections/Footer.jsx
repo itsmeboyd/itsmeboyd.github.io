@@ -11,16 +11,16 @@ export default function Footer() {
             <Logo />
           </div>
 
-          <div className="flex flex-row gap-6 text-sm text-gray-400 justify-center md:justify-end w-full">
+          <div className="flex flex-row gap-6 text-sm text-white justify-center md:justify-end w-full">
             <a
               href="tel:+639121451306"
-              className="flex items-center gap-2 hover:text-white transition-colors"
+              className="flex items-center gap-2 hover:text-(--accent) transition-colors"
             >
               <span>+639121451306</span>
             </a>
             <a
               href="mailto:vadjr27@gmail.com"
-              className="flex items-center gap-2 hover:text-white transition-colors"
+              className="flex items-center gap-2 hover:text-(--accent) transition-colors"
             >
               <span>vadjr27@gmail.com</span>
             </a>

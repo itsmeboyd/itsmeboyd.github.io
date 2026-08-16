@@ -1,15 +1,14 @@
-// import React from "react";
-
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";
 import TechStack from "./sections/TechStack";
 import Projects from "./sections/Projects";
 import Experience from "./sections/Experience";
 import Footer from "./sections/Footer";
+import NavProvider from "./contexts/NavProvider";
 
 function App() {
   return (
-    <div>
+    <NavProvider>
       <Header />
       <main>
         <Hero />
@@ -18,7 +17,8 @@ function App() {
         <Experience />
       </main>
       <Footer />
-    </div>
+    </NavProvider>
   );
 }
+
 export default App;
