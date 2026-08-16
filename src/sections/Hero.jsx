@@ -9,14 +9,16 @@ function Hero() {
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(#27272a_1px,transparent_1px)] bg-size-[16px_16px] opacity-60" />
       <div className="container mx-auto px-4">
         <div className="relative z-10 max-w-2xl space-y-4">
-          <p className="text-gray-400 text-lg">Hello! My name is</p>
+          <p className="text-gray-300">Front-end Developer | WP | MERN Stack</p>
 
-          <h1 className="text-5xl md:text-8xl font-bold text-(--accent)">
+          <h1 className="text-4xl md:text-7xl font-bold text-(--accent)">
             Boyd Delfin
           </h1>
 
-          <p className="text-gray-300 text-xl font-light">
-            I'm a web developer and I make websites for a living.
+          <p className="text-gray-300 font-light">
+            I bridge the gap between marketing strategy and full-stack
+            engineering building high-converting websites and custom web
+            applications that scale.
           </p>
 
           <div className="pt-2">
