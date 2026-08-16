@@ -19,7 +19,9 @@ export function NavProvider({ children }) {
   }, []);
 
   return (
-    <NavContext.Provider value={{ activeNav, setActiveNav, currentHash }}>
+    <NavContext.Provider
+      value={{ activeNav, setActiveNav, currentHash, setCurrentHash }}
+    >
       {children}
     </NavContext.Provider>
   );
