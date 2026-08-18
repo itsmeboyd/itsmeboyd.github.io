@@ -48,7 +48,12 @@ export const TechStackData = [
     isMajorTech: true,
   },
   { name: "Vite", icon: "ViteOutlined", color: "#646CFF", isMajorTech: true },
-  { name: "npm", icon: "NpmOutlined", color: "#CB3837", isMajorTech: true },
+  {
+    name: "Flutter",
+    icon: "FlutterOutlined",
+    color: "#5fc9f8",
+    isMajorTech: true,
+  },
   {
     name: "Lineicons",
     icon: "LineiconsOutlined",
