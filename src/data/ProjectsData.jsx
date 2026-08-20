@@ -12,7 +12,7 @@ export const ProjectsData = [
     title: "Project X",
     description:
       "An upcoming web application focused on high performance and clean UI, built with ReactJS, Vite, and Tailwind CSS.",
-    tech: ["Vite", "React", "TailwindCSS"],
+    tech: ["React", "NodeJS", "ExpressJS", "MongoDB"],
     imgUrl: "/assets/cs_thumb.png",
     liveUrl: "#",
     codeUrl: "#",
